@@ -40,3 +40,11 @@ module "load_balancer" {
   instance_ids       = module.instances.instance_ids
   security_group_ids = [module.security.lb_security_group_id]
 }
+
+module "route53" {
+  source = "./modules/route53"
+
+  hosted_zone_name  = var.domain_name
+  subdomain = var.subdomain
+  load_balancer_arn = module.load_balancer.lb_arn
+}
