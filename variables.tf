@@ -15,3 +15,15 @@ variable "user_data_file" {
   description = "File path of user-data script for EC2 instances"
   default     = "/files/user-data.sh"
 }
+
+variable "domain_name" {
+  type        = string
+  description = "Name of hosted zone"
+  default     = "lukegregorydev.co.uk"
+}
+
+variable "subdomain" {
+  type        = string
+  description = "Subdomain to be added to domain name to create alias record in hosted zone"
+  default     = "www"
+}
