@@ -45,6 +45,6 @@ module "route53" {
   source = "./modules/route53"
 
   hosted_zone_name  = var.domain_name
-  subdomain = var.subdomain
+  subdomain         = var.subdomain
   load_balancer_arn = module.load_balancer.lb_arn
 }
