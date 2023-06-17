@@ -7,7 +7,6 @@ variable "name_tag_prefix" {
 variable "region" {
   type        = string
   description = "AWS region"
-  default     = "eu-west-2"
 }
 
 variable "user_data_file" {
@@ -19,7 +18,6 @@ variable "user_data_file" {
 variable "domain_name" {
   type        = string
   description = "Name of hosted zone"
-  default     = "lukegregorydev.co.uk"
 }
 
 variable "subdomain" {
