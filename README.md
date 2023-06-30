@@ -6,7 +6,7 @@ The 2rd part a series of projects deploying a stateless webapp on AWS using Terr
 
 ---
 
-Builds on [Stateless WebApp #1](https://github.com/L7G9/stateless_webapp_01) by using an application load balancer to access multiple EC2 instances in a target group.  Uses the default VPC instead of creating a VPC and subnets fron scratch.  Creates an alias record in a Route53 hosted zone enabling users to connect to the website via the load balancer using a URL.  
+Builds on [Stateless WebApp #1](https://github.com/L7G9/stateless_webapp_01) by using an application load balancer to access multiple EC2 instances in a target group.  Uses the default VPC instead of creating a VPC and subnets from scratch.  Creates an alias record in a Route53 hosted zone enabling users to connect to the website via the load balancer using a URL.  
 
 Because this project is larger than Stateless WebApp #1 it has been divided into the following 5 modules...
 - [network](https://github.com/L7G9/stateless_webapp_02/tree/main/modules/network)
